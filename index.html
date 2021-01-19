@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomoguru.io</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="nav">
+            <img src="assets/pomotimer.svg">
+        </div>
+        <div class= grid>
+            <div class="left-content">
+                <div class= "set-timer">
+                    <h2>Set timer:</h2>
+                </div>
+                <div class="timer">
+                    <ul>
+                        <li><button id="subtract-button" >-</button></li>
+                        <li><h1 id="current-minutes">25:00</h1></li>
+                        <li><button id="sum-button">+</button></li>
+                    </ul>
+                </div>
+                <div class="request-task">
+                    <form>
+                        <label for="task" id="task-tag">Task:</label>
+                        <input type="text" id="task" name="task" placeholder="Specify your task here">
+                    </form>
+                </div>
+                <div class="button">
+                     <button id="start-btn">Start</button>
+                     <button id="pause-btn">Pause</button>
+                     <button id="reset-btn">Reset</button>
+                     <button id="resume-btn">Resume</button>
+                    <button id="next-btn">Next Round</button>
+                    
+                </div>
+            </div>
+
+           
+
+
+            <div class="statistics-side">
+                <div class="grid-small">
+                    <div class="box">
+                        <h3>Total hours</h3>
+                        <h2 id="hours-focused">0</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Tasks completed</h3>
+                        <h2 id="days-accessed">0</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Days Accessed</h3>
+                        <h2 id="day-streak">0</h2>
+                    </div>
+                </div>
+                <div class="statistics-panel">
+                    <div class="table-settings">
+                        <canvas id="myChart"></canvas>  
+                    </div>   
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="right-content">
+                <div class= "previous-tasks">
+                    <h2>Tasks Completed:</h2>
+                    <hr>
+                </div>
+                <div class="tasks-table">
+                    <table>
+                        <tr>
+                            <th class="left-column" id="table1">Duration</th>
+                            <th class="right-column" id="table2">Task</th>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table3"></td>
+                            <td class="right-column" id="table4"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table5"></td>
+                            <td class="right-column" id="table6"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table7"></td>
+                            <td class="right-column" id="table8"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table9"></td>
+                            <td class="right-column" id="table10"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table11"></td>
+                            <td class="right-column" id="table12"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table13"></td>
+                            <td class="right-column" id="table14"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table15"></td>
+                            <td class="right-column"id="table16"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table17"></td>
+                            <td class="right-column" id="table18"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column" id="table19"></td>
+                            <td class="right-column" id="table20"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-page">
+            <h2>What is Pomotimer?</h2>
+            <p>Pomotimer is a customisable pomodoro timer that works on desktop & mobile. 
+                This apps aims to help you focus on any task, such as studying,
+                 writing, or coding. Pomotimer was inspired by the Pomodoro Technique which is a time management 
+                 method developed by Francesco Cirillo.</p>
+            <h2>What is the Pomodoro Technique?</h2>
+            <p>The Pomodoro Technique was created by Francesco Cirillo.
+                 The technique uses a timer to break down taks into smaller intervals, each intelval usualy lasting 25 minutes, 
+                 separated by short breaks. Each interval is known as a pomodoro.</p>
+            <h2>How to use the Pomodoro Timer?</h2>
+            <ol>
+                <li>Add a task to the timer</li>
+                <li>Select the amount of time you want to focus on that task</li>
+                <li>Start the timer and focus on the task</li>
+            </ol>
+            <br>
+            <h2>Created with &#128154 by Joao Corticadas </h2>
+        </div>
+
+
+
+        <div class="grid-2">
+            <div class="description">
+                <ul><li id="statistics"><h2>My Statistics</h2></li></ul>
+                <ul><li id="return"><h2>Return</h2></li></ul>
+                <ul><li id="return-2"><h2>Return</h2></li></ul>
+            </div>
+            <div class="how-works">
+                <ul>
+                    <li id="works">
+                         <h2 id="last-one">How it works?</h2>
+                    </li>
+                </ul>
+                
+            </div> 
+            
+            
+
+            
+        </div>
+            <script src="./main.js" ></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    </body>
+    
+</html>
