@@ -331,7 +331,7 @@ h3{
 }
 
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 800px) {
     .grid{
         display: grid;
         width: 100%;
